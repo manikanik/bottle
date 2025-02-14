@@ -156,7 +156,7 @@ function updateVariables() {
                   \\(${here}\\)<br>
                   \\(${av1}${aop}${av2}${e}${ax1}\\)<br>
                   \\(${c}\\left(${av1}${aop}${av2}\\right)^2${e}(${ax1})^2\\)<br>
-                  \\(${c}(${av1})^2+(${av2})^2${aop}2.${av1}\\,${av2}${e}${axx1}\\)<br>
+                  \\(${c}(${av1})^2+(${av2})^2${aop}2.${av1}.${av2}${e}${axx1}\\)<br>
                   \\(${c}${av1}^2+${av2}^2${aop}2.${ax2}${e}${axx1}\\)<br>
                   \\(${c}${av1}^2+${av2}^2${e}${axx1}${aopO}${2*ax2}\\)<br>
                   \\(${d}${av1}^2+${av2}^2${e}${axxx}\\)`;
@@ -171,9 +171,9 @@ function updateVariables() {
                   \\(${here}\\)<br>
                   \\(${av1}${aop}${av2}${e}${ax1}\\)<br>
                   \\(${c}\\left(${av1}${aop}${av2}\\right)^3${e}(${ax1})^3\\)<br>
-                  \\(${c}(${av1})^3${aop}(${av2})^3${aop}3.${av1}\\,${av2}\\,\\left(${av1}${aop}${av2}\\right)
+                  \\(${c}(${av1})^3${aop}(${av2})^3${aop}3.${av1}.${av2}.\\left(${av1}${aop}${av2}\\right)
                   ${e}${axx1_ffb}\\)<br>
-                  \\(${c}${av1}^3${aop}${av2}^3${aop}3.${ax2}\\,${ax1}${e}${axx1_ffb}\\)<br>
+                  \\(${c}${av1}^3${aop}${av2}^3${aop}3.${ax2}.${ax1}${e}${axx1_ffb}\\)<br>
                   \\(${c}${av1}^3${aop}${av2}^3${e}${axx1_ffb}${aopO}${3*ax1*ax2}\\)<br>
                   \\(${d}${av1}^3${aop}${av2}^3${e}${axxx_ffb}\\)`;
   
@@ -216,27 +216,27 @@ function updateVariables() {
                   \\(${here}\\)<br>
                   \\(${av1}${aop}${av2}${e}${ax1}\\)<br>
                   \\(${c}\\left(${av1}${aop}${av2}\\right)^2${e}(${ax1})^2\\)<br>
-                  \\(${c}(${av1})^2+(${av2})^2${aop}2.${av1}${av2}${e}${axx1_ffd}\\)<br>
+                  \\(${c}(${av1})^2+(${av2})^2${aop}2.${av1}.${av2}${e}${axx1_ffd}\\)<br>
                   \\(${c}${av1}^2+${av2}^2${aop}2.${ax2}${e}${axx1_ffd}\\)<br>
                   \\(${c}${av1}^2+${av2}^2${e}${axx1_ffd}${aopO}${2*ax2}\\)<br>
                   \\(${c}${av1}^2+${av2}^2${e}${axxx_ffd}\\)<br>
                   \\(${again}\\)<br>
                   \\(${av1}${aop}${av2}${e}${ax1}\\)<br>
                   \\(${c}\\left(${av1}${aop}${av2}\\right)^3${e}(${ax1})^3\\)<br>
-                  \\(${c}(${av1})^3${aop}(${av2})^3${aop}3.${av1}${av2}\\left(${av1}${aop}${av2}\\right)
+                  \\(${c}(${av1})^3${aop}(${av2})^3${aop}3.${av1}.${av2}\\left(${av1}${aop}${av2}\\right)
                   ${e}${ayy1_ffd}\\)<br>
-                  \\(${c}\\,${av1}^3${aop}${av2}^3${aop}3.${ax2}${ax1}${e}${ayy1_ffd}\\)<br>
-                  \\(${c}\\,${av1}^3${aop}${av2}^3${e}${ayy1_ffd}${aopO}${3*ax1*ax2}\\)<br>
-                  \\(${c}\\,${av1}^3${aop}${av2}^3${e}${ayyy_ffd}\\)<br>
+                  \\(${c}${av1}^3${aop}${av2}^3${aop}3.${ax2}.${ax1}${e}${ayy1_ffd}\\)<br>
+                  \\(${c}${av1}^3${aop}${av2}^3${e}${ayy1_ffd}${aopO}${3*ax1*ax2}\\)<br>
+                  \\(${c}${av1}^3${aop}${av2}^3${e}${ayyy_ffd}\\)<br>
                   \\(${now}\\)<br>
-                  \\((${av1}^3${aop}${av2}^3)\\,\\left(${av1}^2+${av2}^2\\right)
+                  \\((${av1}^3${aop}${av2}^3)\\left(${av1}^2+${av2}^2\\right)
                   ${e}${ayyy_ffd}\\cdot${axxx_ffd}\\)<br>
-                  \\(${c}${av1}^5+${av1}^3\\,${av2}^2${aop}${av1}^2\\,${av2}^3${aop}${av2}^5${e}${ayyy_ffd*axxx_ffd}\\)<br>
+                  \\(${c}${av1}^5+${av1}^3${av2}^2${aop}${av1}^2${av2}^3${aop}${av2}^5${e}${ayyy_ffd*axxx_ffd}\\)<br>
                   \\(${c}${av1}^5${aop}${av2}^5+${av1}^2\\,${av2}^2\\,\\left(${av1}${aop}${av2}\\right)
                   ${e}${ayyy_ffd*axxx_ffd}\\)<br>
-                  \\(${c}${av1}^5${aop}${av2}^5+\\left(${av1}${av2}\\right)^2\\,\\left(${av1}${aop}${av2}\\right)
+                  \\(${c}${av1}^5${aop}${av2}^5+\\left(${av1}${av2}\\right)^2\\left(${av1}${aop}${av2}\\right)
                   ${e}${ayyy_ffd*axxx_ffd}\\)<br>
-                  \\(${c}${av1}^5${aop}${av2}^5+\\left(${ax2}\\right)^2\\,\\left(${ax1}\\right)
+                  \\(${c}${av1}^5${aop}${av2}^5+\\left(${ax2}\\right)^2\\left(${ax1}\\right)
                   ${e}${ayyy_ffd*axxx_ffd}\\)<br>
                   \\(${c}${av1}^5${aop}${av2}^5${e}${ayyy_ffd*axxx_ffd}-${ax2*ax2*ax1}\\)<br>
                   \\(${c}${av1}^5${aop}${av2}^5${e}${ayyy_ffd*axxx_ffd-ax2*ax2*ax1}\\)`;
@@ -250,17 +250,21 @@ function updateVariables() {
                   \\(${av1}${aop}${av2}${e}${ax1}${and}${av1}${av2}${e}${ax2}\\)<br>
                   \\(${here}\\)<br>
                   \\(${av1}${aop}${av2}${e}${ax1}\\)<br>
-                  \\(${c}\\,\\left(${av1}${aop}${av2}\\right)^2${e}(${ax1})^2\\)<br>
-                  \\(${c}\\,(${av1})^2+(${av2})^2${aop}2.${av1}\\,${av2}${e}${axx1_ffe}\\)<br>
-                  \\(${c}\\,${av1}^2+${av2}^2${aop}2.${ax2}${e}${axx1_ffe}\\)<br>
-                  \\(${c}\\,${av1}^2+${av2}^2${e}${axx1_ffe}${aopO}${2*ax2}\\)<br>
-                  \\(${c}\\,${av1}^2+${av2}^2${e}${axxx_ffe}\\)<br>
-                  \\(${c}\\,\\left(${av1}^2+${av2}^2\\right)^3${e}(${axxx_ffe})^3\\)<br>
-                  \\(${c}\\,(${av1}^2)^3+(${av2}^2)^3+3.${av1}^2\\,${av2}^2\\,\\left(${av1}^2+${av2}^2\\right)
-                  ${e}${axxx_ffe*axxx_ffe*axxx_ffe}\\)<br>
-                  \\(${c}\\,${av1}^6+${av2}^6+3.\\left(${av1}${av2}\\right)^2\\,\\left(${av1}^2+${av2}^2\\right)
-                  ${e}${axxx_ffe*axxx_ffe*axxx_ffe}-${3*ax2*ax2*axxx_ffe}\\)<br>
-                  \\(${d}\\,${av1}^6+${av2}^6${e}${axxx_ffe*axxx_ffe*axxx_ffe-3*ax2*ax2*axxx_ffe}\\)`;
+                  \\(${c}\\left(${av1}${aop}${av2}\\right)^2${e}(${ax1})^2\\)<br>
+                  \\(${c}(${av1})^2+(${av2})^2${aop}2.${av1}.${av2}${e}${axx1_ffe}\\)<br>
+                  \\(${c}${av1}^2+${av2}^2${aop}2.${ax2}${e}${axx1_ffe}\\)<br>
+                  \\(${c}${av1}^2+${av2}^2${e}${axx1_ffe}${aopO}${2*ax2}\\)<br>
+                  \\(${c}${av1}^2+${av2}^2${e}${axxx_ffe}\\)<br>
+                  \\(${c}\\left(${av1}^2+${av2}^2\\right)^3${e}(${axxx_ffe})^3\\)<br>
+                  \\(${c}(${av1}^2)^3+(${av2}^2)^3+3.${av1}^2.${av2}^2\\left(${av1}^2+${av2}^2\\right)
+                     ${e}${axxx_ffe*axxx_ffe*axxx_ffe}\\)<br>
+                  \\(${c}${av1}^6+${av2}^6+3.\\left(${av1}${av2}\\right)^2.\\left(${av1}^2+${av2}^2\\right)
+                     ${e}${axxx_ffe*axxx_ffe*axxx_ffe}\\)<br>
+                  \\(${c}${av1}^6+${av2}^6+3.\\left(${ax2}\\right)^2.${axxx_ffe}
+                     ${e}${axxx_ffe*axxx_ffe*axxx_ffe}\\)<br>
+                  \\(${c}${av1}^6+${av2}^6
+                     ${e}${axxx_ffe*axxx_ffe*axxx_ffe}-${3*ax2*ax2*axxx_ffe}\\)<br>
+                  \\(${d}${av1}^6+${av2}^6${e}${axxx_ffe*axxx_ffe*axxx_ffe-3*ax2*ax2*axxx_ffe}\\)`;
 
     waitForKatexdddd();
 }
