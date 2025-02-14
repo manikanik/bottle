@@ -64,11 +64,11 @@ function updateVariables() {
   pa.innerHTML = `\\(${tx1}${v1}${op}${v2}${e}${x1}; ${v1}^2+${v22}${e}?\\)<br>
                   \\(${given}\\)<br>
                   \\(${v1}${op}\\frac{1}{${v1}}${e}${x1}\\)<br><br>
-                  \\(${c}\\,\\left(${v1}${op}\\frac{1}{${v1}}\\right)^2${e}(${x1})^2\\)<br><br>
-                  \\(${c}\\,(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}\\.\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
-                  \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${op}2${e}${x1*x1}\\)<br><br>
-                  \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${x1*x1}${opO}2\\)<br><br>
-                  \\(${d}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${xxx}\\)`;
+                  \\(${c}\\left(${v1}${op}\\frac{1}{${v1}}\\right)^2${e}(${x1})^2\\)<br><br>
+                  \\(${c}(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}.\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
+                  \\(${c}${v1}^2+\\frac{1}{${v1}^2}${op}2${e}${x1*x1}\\)<br><br>
+                  \\(${c}${v1}^2+\\frac{1}{${v1}^2}${e}${x1*x1}${opO}2\\)<br><br>
+                  \\(${d}${v1}^2+\\frac{1}{${v1}^2}${e}${xxx}\\)`;
   
   // ----- ggb() -----
   let yy1 = x1 * x1 * x1 - 3 * x1;
@@ -78,27 +78,27 @@ function updateVariables() {
   pb.innerHTML = `\\(${tx1}${v1}${op}${v2}${e}${x1}; ${v1}^3${op}${v23}${e}?\\)<br>
                   \\(${given}\\)<br>
                   \\(${v1}${op}\\frac{1}{${v1}}${e}${x1}\\)<br><br>
-                  \\(${c}\\,\\left(${v1}${op}\\frac{1}{${v1}}\\right)^3${e}(${x1})^3\\)<br><br>
-                  \\(${c}\\,(${v1})^3${op}\\left(\\frac{1}{${v1}}\\right)^3${op}3.${v1}\\.\\frac{1}{${v1}}\\,(${v1}${op}\\frac{1}{${v1}})${e}${x1*x1*x1}\\)<br><br>
-                  \\(${c}\\,${v1}^3${op}\\frac{1}{${v1}^3}${op}3.1.${x1}${e}${x1*x1*x1}\\)<br><br>
-                  \\(${c}\\,${v1}^3${op}\\frac{1}{${v1}^3}${e}${x1*x1*x1}${opO}${3*x1}\\)<br><br>
-                  \\(${d}\\,${v1}^3${op}\\frac{1}{${v1}^3}${e}${yyy}\\)`;
+                  \\(${c}\\left(${v1}${op}\\frac{1}{${v1}}\\right)^3${e}(${x1})^3\\)<br><br>
+                  \\(${c}(${v1})^3${op}\\left(\\frac{1}{${v1}}\\right)^3${op}3.${v1}.\\frac{1}{${v1}}.(${v1}${op}\\frac{1}{${v1}})${e}${x1*x1*x1}\\)<br><br>
+                  \\(${c}${v1}^3${op}\\frac{1}{${v1}^3}${op}3.1.${x1}${e}${x1*x1*x1}\\)<br><br>
+                  \\(${c}${v1}^3${op}\\frac{1}{${v1}^3}${e}${x1*x1*x1}${opO}${3*x1}\\)<br><br>
+                  \\(${d}${v1}^3${op}\\frac{1}{${v1}^3}${e}${yyy}\\)`;
   
   // ----- ggc() -----
   let xxx_ggc = (op === '+') ? xx1 : xx2;
   pc.innerHTML = `\\(${tx1}${v1}${op}${v2}${e}${x1}; ${v1}^4+${v24}${e}?\\)<br>
                   \\(${given}\\)<br>
                   \\(${v1}${op}\\frac{1}{${v1}}${e}${x1}\\)<br><br>
-                  \\(${c}\\,\\left(${v1}${op}\\frac{1}{${v1}}\\right)^2${e}(${x1})^2\\)<br><br>
-                  \\(${c}\\,(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}\\.\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
-                  \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${op}2${e}${x1*x1}\\)<br><br>
-                  \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${x1*x1}${opO}2\\)<br><br>
-                  \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${xxx_ggc}\\)<br><br>
-                  \\(${c}\\,\\left(${v1}^2+\\frac{1}{${v1}^2}\\right)^2${e}(${xxx_ggc})^2\\)<br><br>
-                  \\(${c}\\,(${v1}^2)^2+\\left(\\frac{1}{${v1}^2}\\right)^2+2.${v1}^2\\.\\frac{1}{${v1}^2}${e}${xxx_ggc*xxx_ggc}\\)<br><br>
-                  \\(${c}\\,${v1}^4+\\frac{1}{${v1}^4}+2${e}${xxx_ggc*xxx_ggc}\\)<br><br>
-                  \\(${c}\\,${v1}^4+\\frac{1}{${v1}^4}${e}${xxx_ggc*xxx_ggc}-2\\)<br><br>
-                  \\(${d}\\,${v1}^4+\\frac{1}{${v1}^4}${e}${xxx_ggc*xxx_ggc-2}\\)`;
+                  \\(${c}\\left(${v1}${op}\\frac{1}{${v1}}\\right)^2${e}(${x1})^2\\)<br><br>
+                  \\(${c}(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}.\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
+                  \\(${c}${v1}^2+\\frac{1}{${v1}^2}${op}2${e}${x1*x1}\\)<br><br>
+                  \\(${c}${v1}^2+\\frac{1}{${v1}^2}${e}${x1*x1}${opO}2\\)<br><br>
+                  \\(${c}${v1}^2+\\frac{1}{${v1}^2}${e}${xxx_ggc}\\)<br><br>
+                  \\(${c}\\left(${v1}^2+\\frac{1}{${v1}^2}\\right)^2${e}(${xxx_ggc})^2\\)<br><br>
+                  \\(${c}(${v1}^2)^2+\\left(\\frac{1}{${v1}^2}\\right)^2+2.${v1}^2.\\frac{1}{${v1}^2}${e}${xxx_ggc*xxx_ggc}\\)<br><br>
+                  \\(${c}${v1}^4+\\frac{1}{${v1}^4}+2${e}${xxx_ggc*xxx_ggc}\\)<br><br>
+                  \\(${c}${v1}^4+\\frac{1}{${v1}^4}${e}${xxx_ggc*xxx_ggc}-2\\)<br><br>
+                  \\(${d}${v1}^4+\\frac{1}{${v1}^4}${e}${xxx_ggc*xxx_ggc-2}\\)`;
   
   // ----- ggd() -----
   let xxx_ggd = (op === '+') ? xx1 : xx2;
@@ -106,35 +106,45 @@ function updateVariables() {
   pd.innerHTML = `\\(${tx1}${v1}${op}${v2}${e}${x1}; ${v1}^5${op}${v25}${e}?\\)<br>
                   \\(${given}\\)<br>
                   \\(${v1}${op}\\frac{1}{${v1}}${e}${x1}\\)<br><br>
-                  \\(${c}\\,\\left(${v1}${op}\\frac{1}{${v1}}\\right)^2${e}(${x1})^2\\)<br><br>
-                  \\(${c}\\,(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}\\.\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
-                  \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${op}2${e}${x1*x1}\\)<br><br>
-                  \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${x1*x1}${opO}2\\)<br><br>
-                  \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${xxx_ggd}\\)<br><br>
+                  \\(${c}\\left(${v1}${op}\\frac{1}{${v1}}\\right)^2${e}(${x1})^2\\)<br><br>
+                  \\(${c}(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}.\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
+                  \\(${c}${v1}^2+\\frac{1}{${v1}^2}${op}2${e}${x1*x1}\\)<br><br>
+                  \\(${c}${v1}^2+\\frac{1}{${v1}^2}${e}${x1*x1}${opO}2\\)<br><br>
+                  \\(${c}${v1}^2+\\frac{1}{${v1}^2}${e}${xxx_ggd}\\)<br><br>
                   \\(${again}\\)<br>
                   \\(${v1}${op}\\frac{1}{${v1}}${e}${x1}\\)<br><br>
-                  \\(${c}\\,\\left(${v1}${op}\\frac{1}{${v1}}\\right)^3${e}(${x1})^3\\)<br><br>
-                  \\(${c}\\,(${v1})^3${op}\\left(\\frac{1}{${v1}}\\right)^3${op}3.${v1}\\,\\frac{1}{${v1}}\\,(${v1}${op}\\frac{1}{${v1}})${e}${x1*x1*x1}\\)<br><br>
-                  \\(${c}\\,${v1}^3${op}\\frac{1}{${v1}^3}${op}3.${x1}${e}${x1*x1*x1}\\)<br><br>
-                  \\(${c}\\,${v1}^3${op}\\frac{1}{${v1}^3}${e}${x1*x1*x1}${opO}${3*x1}\\)<br><br>
-                  \\(${d}\\,${v1}^3${op}\\frac{1}{${v1}^3}${e}${yyy_ggd}\\)`;
+                  \\(${c}\\left(${v1}${op}\\frac{1}{${v1}}\\right)^3${e}(${x1})^3\\)<br><br>
+                  \\(${c}(${v1})^3${op}\\left(\\frac{1}{${v1}}\\right)^3${op}3.${v1}.\\frac{1}{${v1}}\\,(${v1}${op}\\frac{1}{${v1}})${e}${x1*x1*x1}\\)<br><br>
+                  \\(${c}${v1}^3${op}\\frac{1}{${v1}^3}${op}3.${x1}${e}${x1*x1*x1}\\)<br><br>
+                  \\(${c}${v1}^3${op}\\frac{1}{${v1}^3}${e}${x1*x1*x1}${opO}${3*x1}\\)<br><br>
+                  \\(${c}${v1}^3${op}\\frac{1}{${v1}^3}${e}${yyy_ggd}\\)<br>
+                  \\(${now} \\)<br>
+                  \\((${v1}^3${op}\\frac{1}{${v1}^3})(${v1}^2+\\frac{1}{${v1}^2})
+                     ${e}${yyy_ggd}.${xxx_ggd} \\)<br><br>
+                  \\(${c}${v1}^5+${v1}^3.\\frac{1}{${v1}^2}${op}\\frac{1}{${v1}^3}.${v1}^2${op}
+                     \\frac{1}{${v1}^5}${e}${yyy_ggd*xxx_ggd} \\)<br><br>
+                  \\(${c}${v1}^5${op}\\frac{1}{${v1}^5}+${v1}${op}\\frac{1}{${v1}}${e}${yyy_ggd*xxx_ggd} \\)<br><br>
+                  \\(${c}${v1}^5${op}\\frac{1}{${v1}^5}+${x1}${e}${yyy_ggd*xxx_ggd} \\)<br><br>
+                  \\(${c}${v1}^5${op}\\frac{1}{${v1}^5}${e}${yyy_ggd*xxx_ggd}-${x1} \\)<br><br>
+                  \\(${d}${v1}^5${op}\\frac{1}{${v1}^5}${e}${yyy_ggd*xxx_ggd-x1} \\)<br><br>
+                  `;
   
   // ----- gge() -----
   let xxx_gge = (op === '+') ? xx1 : xx2;
   pe.innerHTML = `\\(${tx1}${v1}${op}${v2}${e}${x1}; ${v1}^6+${v26}${e}?\\)<br>
                   \\(${given}\\)<br>
                   \\(${v1}${op}\\frac{1}{${v1}}${e}${x1}\\)<br><br>
-                  \\(${c}\\,\\left(${v1}${op}\\frac{1}{${v1}}\\right)^2${e}(${x1})^2\\)<br><br>
-                  \\(${c}\\,(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}\\.\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
-                  \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${op}2${e}${x1*x1}\\)<br><br>
-                  \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${x1*x1}${opO}2\\)<br><br>
-                  \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${xxx_gge}\\)<br><br>
-                  \\(${c}\\,\\left(${v1}^2+\\frac{1}{${v1}^2}\\right)^3${e}(${xxx_gge})^3\\)<br><br>
-                  \\(${c}\\,(${v1}^2)^3+\\left(${v1}^2\\right)^3+3.${v1}^2\\,${v1}^2\\,\\left(${v1}^2+\\frac{1}{${v1}^2}\\right)
+                  \\(${c}\\left(${v1}${op}\\frac{1}{${v1}}\\right)^2${e}(${x1})^2\\)<br><br>
+                  \\(${c}(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}.\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
+                  \\(${c}${v1}^2+\\frac{1}{${v1}^2}${op}2${e}${x1*x1}\\)<br><br>
+                  \\(${c}${v1}^2+\\frac{1}{${v1}^2}${e}${x1*x1}${opO}2\\)<br><br>
+                  \\(${c}${v1}^2+\\frac{1}{${v1}^2}${e}${xxx_gge}\\)<br><br>
+                  \\(${c}\\left(${v1}^2+\\frac{1}{${v1}^2}\\right)^3${e}(${xxx_gge})^3\\)<br><br>
+                  \\(${c}(${v1}^2)^3+\\left(\\frac{1}{${v1}^2} \\right)^3+3.${v1}^2.\\frac{1}{${v1}^2}.\\left(${v1}^2+\\frac{1}{${v1}^2}\\right)
                   ${e}${xxx_gge*xxx_gge*xxx_gge}\\)<br><br>
-                  \\(${c}\\,${v1}^6+\\frac{1}{${v1}^6}+3.${xxx_gge}${e}${xxx_gge*xxx_gge*xxx_gge}\\)<br><br>
-                  \\(${c}\\,${v1}^6+\\frac{1}{${v1}^6}${e}${xxx_gge*xxx_gge*xxx_gge}-${3*xxx_gge}\\)<br><br>
-                  \\(${d}\\,${v1}^6+\\frac{1}{${v1}^6}${e}${xxx_gge*xxx_gge*xxx_gge-3*xxx_gge}\\)`;
+                  \\(${c}${v1}^6+\\frac{1}{${v1}^6}+3.${xxx_gge}${e}${xxx_gge*xxx_gge*xxx_gge}\\)<br><br>
+                  \\(${c}${v1}^6+\\frac{1}{${v1}^6}${e}${xxx_gge*xxx_gge*xxx_gge}-${3*xxx_gge}\\)<br><br>
+                  \\(${d}${v1}^6+\\frac{1}{${v1}^6}${e}${xxx_gge*xxx_gge*xxx_gge-3*xxx_gge}\\)`;
   
   // ----- ffa() -----
   let axx1 = ax1 * ax1;
@@ -145,11 +155,11 @@ function updateVariables() {
                   \\(${av1}${aop}${av2}${e}${ax1}${and}${av1}${av2}${e}${ax2}\\)<br>
                   \\(${here}\\)<br>
                   \\(${av1}${aop}${av2}${e}${ax1}\\)<br>
-                  \\(${c}\\,\\left(${av1}${aop}${av2}\\right)^2${e}(${ax1})^2\\)<br>
-                  \\(${c}\\,(${av1})^2+(${av2})^2${aop}2.${av1}\\,${av2}${e}${axx1}\\)<br>
-                  \\(${c}\\,${av1}^2+${av2}^2${aop}2.${ax2}${e}${axx1}\\)<br>
-                  \\(${c}\\,${av1}^2+${av2}^2${e}${axx1}${aopO}${2*ax2}\\)<br>
-                  \\(${d}\\,${av1}^2+${av2}^2${e}${axxx}\\)`;
+                  \\(${c}\\left(${av1}${aop}${av2}\\right)^2${e}(${ax1})^2\\)<br>
+                  \\(${c}(${av1})^2+(${av2})^2${aop}2.${av1}\\,${av2}${e}${axx1}\\)<br>
+                  \\(${c}${av1}^2+${av2}^2${aop}2.${ax2}${e}${axx1}\\)<br>
+                  \\(${c}${av1}^2+${av2}^2${e}${axx1}${aopO}${2*ax2}\\)<br>
+                  \\(${d}${av1}^2+${av2}^2${e}${axxx}\\)`;
   
   // ----- ffb() -----
   let axx1_ffb = ax1 * ax1 * ax1;
@@ -160,12 +170,12 @@ function updateVariables() {
                   \\(${av1}${aop}${av2}${e}${ax1}${and}${av1}${av2}${e}${ax2}\\)<br>
                   \\(${here}\\)<br>
                   \\(${av1}${aop}${av2}${e}${ax1}\\)<br>
-                  \\(${c}\\,\\left(${av1}${aop}${av2}\\right)^3${e}(${ax1})^3\\)<br>
-                  \\(${c}\\,(${av1})^3${aop}(${av2})^3${aop}3.${av1}\\,${av2}\\,\\left(${av1}${aop}${av2}\\right)
+                  \\(${c}\\left(${av1}${aop}${av2}\\right)^3${e}(${ax1})^3\\)<br>
+                  \\(${c}(${av1})^3${aop}(${av2})^3${aop}3.${av1}\\,${av2}\\,\\left(${av1}${aop}${av2}\\right)
                   ${e}${axx1_ffb}\\)<br>
-                  \\(${c}\\,${av1}^3${aop}${av2}^3${aop}3.${ax2}\\,${ax1}${e}${axx1_ffb}\\)<br>
-                  \\(${c}\\,${av1}^3${aop}${av2}^3${e}${axx1_ffb}${aopO}${3*ax1*ax2}\\)<br>
-                  \\(${d}\\,${av1}^3${aop}${av2}^3${e}${axxx_ffb}\\)`;
+                  \\(${c}${av1}^3${aop}${av2}^3${aop}3.${ax2}\\,${ax1}${e}${axx1_ffb}\\)<br>
+                  \\(${c}${av1}^3${aop}${av2}^3${e}${axx1_ffb}${aopO}${3*ax1*ax2}\\)<br>
+                  \\(${d}${av1}^3${aop}${av2}^3${e}${axxx_ffb}\\)`;
   
   // ----- ffc() -----
   let axx1_ffc = ax1 * ax1;
@@ -176,17 +186,17 @@ function updateVariables() {
                   \\(${av1}${aop}${av2}${e}${ax1}${and}${av1}${av2}${e}${ax2}\\)<br>
                   \\(${here}\\)<br>
                   \\(${av1}${aop}${av2}${e}${ax1}\\)<br>
-                  \\(${c}\\,\\left(${av1}${aop}${av2}\\right)^2${e}(${ax1})^2\\)<br>
-                  \\(${c}\\,(${av1})^2+(${av2})^2${aop}2.${av1}\\,${av2}${e}${axx1_ffc}\\)<br>
-                  \\(${c}\\,${av1}^2+${av2}^2${aop}2.${ax2}${e}${axx1_ffc}\\)<br>
-                  \\(${c}\\,${av1}^2+${av2}^2${e}${axx1_ffc}${aopO}${2*ax2}\\)<br>
-                  \\(${c}\\,${av1}^2+${av2}^2${e}${axxx_ffc}\\)<br>
-                  \\(${c}\\,\\left(${av1}^2+${av2}^2\\right)^2${e}${axxx_ffc}^2\\)<br>
-                  \\(${c}\\,(${av1}^2)^2+(${av2}^2)^2+2.${av1}^2\\,(${av2}^2)${e}${axxx_ffc*axxx_ffc}\\)<br>
-                  \\(${c}\\,${av1}^4+${av2}^4+2.\\left(${av1}${av2}\\right)^2${e}${axxx_ffc*axxx_ffc}\\)<br>
-                  \\(${c}\\,${av1}^4+${av2}^4+2.\\left(${ax2}\\right)^2${e}${axxx_ffc*axxx_ffc}\\)<br>
-                  \\(${c}\\,${av1}^4+${av2}^4${e}${axxx_ffc*axxx_ffc}-${2*ax2*ax2}\\)<br>
-                  \\(${d}\\,${av1}^4+${av2}^4${e}${axxx_ffc*axxx_ffc-2*ax2*ax2}\\)`;
+                  \\(${c}\\left(${av1}${aop}${av2}\\right)^2${e}(${ax1})^2\\)<br>
+                  \\(${c}(${av1})^2+(${av2})^2${aop}2.${av1}.${av2}${e}${axx1_ffc}\\)<br>
+                  \\(${c}${av1}^2+${av2}^2${aop}2.${ax2}${e}${axx1_ffc}\\)<br>
+                  \\(${c}${av1}^2+${av2}^2${e}${axx1_ffc}${aopO}${2*ax2}\\)<br>
+                  \\(${c}${av1}^2+${av2}^2${e}${axxx_ffc}\\)<br>
+                  \\(${c}\\left(${av1}^2+${av2}^2\\right)^2${e}${axxx_ffc}^2\\)<br>
+                  \\(${c}(${av1}^2)^2+(${av2}^2)^2+2.${av1}^2.${av2}^2${e}${axxx_ffc*axxx_ffc}\\)<br>
+                  \\(${c}${av1}^4+${av2}^4+2.\\left(${av1}${av2}\\right)^2${e}${axxx_ffc*axxx_ffc}\\)<br>
+                  \\(${c}${av1}^4+${av2}^4+2.\\left(${ax2}\\right)^2${e}${axxx_ffc*axxx_ffc}\\)<br>
+                  \\(${c}${av1}^4+${av2}^4${e}${axxx_ffc*axxx_ffc}-${2*ax2*ax2}\\)<br>
+                  \\(${d}${av1}^4+${av2}^4${e}${axxx_ffc*axxx_ffc-2*ax2*ax2}\\)`;
   
   // ----- ffd() -----
   let axx1_ffd = ax1 * ax1;
@@ -205,31 +215,31 @@ function updateVariables() {
                   \\(${av1}${aop}${av2}${e}${ax1}${and}${av1}${av2}${e}${ax2}\\)<br>
                   \\(${here}\\)<br>
                   \\(${av1}${aop}${av2}${e}${ax1}\\)<br>
-                  \\(${c}\\,\\left(${av1}${aop}${av2}\\right)^2${e}(${ax1})^2\\)<br>
-                  \\(${c}\\,(${av1})^2+(${av2})^2${aop}2.${av1}\\,${av2}${e}${axx1_ffd}\\)<br>
-                  \\(${c}\\,${av1}^2+${av2}^2${aop}2.${ax2}${e}${axx1_ffd}\\)<br>
-                  \\(${c}\\,${av1}^2+${av2}^2${e}${axx1_ffd}${aopO}${2*ax2}\\)<br>
-                  \\(${c}\\,${av1}^2+${av2}^2${e}${axxx_ffd}\\)<br>
+                  \\(${c}\\left(${av1}${aop}${av2}\\right)^2${e}(${ax1})^2\\)<br>
+                  \\(${c}(${av1})^2+(${av2})^2${aop}2.${av1}${av2}${e}${axx1_ffd}\\)<br>
+                  \\(${c}${av1}^2+${av2}^2${aop}2.${ax2}${e}${axx1_ffd}\\)<br>
+                  \\(${c}${av1}^2+${av2}^2${e}${axx1_ffd}${aopO}${2*ax2}\\)<br>
+                  \\(${c}${av1}^2+${av2}^2${e}${axxx_ffd}\\)<br>
                   \\(${again}\\)<br>
                   \\(${av1}${aop}${av2}${e}${ax1}\\)<br>
-                  \\(${c}\\,\\left(${av1}${aop}${av2}\\right)^3${e}(${ax1})^3\\)<br>
-                  \\(${c}\\,(${av1})^3${aop}(${av2})^3${aop}3.${av1}\\,${av2}\\,\\left(${av1}${aop}${av2}\\right)
+                  \\(${c}\\left(${av1}${aop}${av2}\\right)^3${e}(${ax1})^3\\)<br>
+                  \\(${c}(${av1})^3${aop}(${av2})^3${aop}3.${av1}${av2}\\left(${av1}${aop}${av2}\\right)
                   ${e}${ayy1_ffd}\\)<br>
-                  \\(${c}\\,${av1}^3${aop}${av2}^3${aop}3.${ax2}\\,${ax1}${e}${ayy1_ffd}\\)<br>
+                  \\(${c}\\,${av1}^3${aop}${av2}^3${aop}3.${ax2}${ax1}${e}${ayy1_ffd}\\)<br>
                   \\(${c}\\,${av1}^3${aop}${av2}^3${e}${ayy1_ffd}${aopO}${3*ax1*ax2}\\)<br>
                   \\(${c}\\,${av1}^3${aop}${av2}^3${e}${ayyy_ffd}\\)<br>
                   \\(${now}\\)<br>
-                  \\(\\,(${av1}^3${aop}${av2}^3)\\,\\left(${av1}^2+${av2}^2\\right)
-                  ${e}${ayyy_ffd}\\,\\cdot\\,${axxx_ffd}\\)<br>
-                  \\(${c}\\,${av1}^5+${av1}^3\\,${av2}^2${aop}${av1}^2\\,${av2}^3${aop}${av2}^5${e}${ayyy_ffd*axxx_ffd}\\)<br>
-                  \\(${c}\\,${av1}^5${aop}${av2}^5+${av1}^2\\,${av2}^2\\,\\left(${av1}${aop}${av2}\\right)
+                  \\((${av1}^3${aop}${av2}^3)\\,\\left(${av1}^2+${av2}^2\\right)
+                  ${e}${ayyy_ffd}\\cdot${axxx_ffd}\\)<br>
+                  \\(${c}${av1}^5+${av1}^3\\,${av2}^2${aop}${av1}^2\\,${av2}^3${aop}${av2}^5${e}${ayyy_ffd*axxx_ffd}\\)<br>
+                  \\(${c}${av1}^5${aop}${av2}^5+${av1}^2\\,${av2}^2\\,\\left(${av1}${aop}${av2}\\right)
                   ${e}${ayyy_ffd*axxx_ffd}\\)<br>
-                  \\(${c}\\,${av1}^5${aop}${av2}^5+\\left(${av1}${av2}\\right)^2\\,\\left(${av1}${aop}${av2}\\right)
+                  \\(${c}${av1}^5${aop}${av2}^5+\\left(${av1}${av2}\\right)^2\\,\\left(${av1}${aop}${av2}\\right)
                   ${e}${ayyy_ffd*axxx_ffd}\\)<br>
-                  \\(${c}\\,${av1}^5${aop}${av2}^5+\\left(${ax2}\\right)^2\\,\\left(${ax1}\\right)
+                  \\(${c}${av1}^5${aop}${av2}^5+\\left(${ax2}\\right)^2\\,\\left(${ax1}\\right)
                   ${e}${ayyy_ffd*axxx_ffd}\\)<br>
-                  \\(${c}\\,${av1}^5${aop}${av2}^5${e}${ayyy_ffd*axxx_ffd}-${ax2*ax2*ax1}\\)<br>
-                  \\(${d}\\,${av1}^5${aop}${av2}^5${e}${ayyy_ffd*axxx_ffd-ax2*ax2*ax1}\\)`;
+                  \\(${c}${av1}^5${aop}${av2}^5${e}${ayyy_ffd*axxx_ffd}-${ax2*ax2*ax1}\\)<br>
+                  \\(${c}${av1}^5${aop}${av2}^5${e}${ayyy_ffd*axxx_ffd-ax2*ax2*ax1}\\)`;
   
   // ----- ffe() -----
   let axx1_ffe = ax1 * ax1;
