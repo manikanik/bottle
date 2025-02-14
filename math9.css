@@ -1,0 +1,74 @@
+.input-group {
+    margin: 10px;
+    padding: 3px;
+}
+label { 
+
+    font-size: 25pt;
+    color: #eb1818;
+
+}
+.btn {
+    margin: 10px;
+    padding: 5px;
+
+    font-size: 20pt;
+    color: #121480;
+
+    border: 2px solid #996de0;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.output {
+    
+    margin: 10px;
+    padding: 5px;
+
+    font-size: 25pt;
+    color: #ee1770;
+    background-color: #faebd7;
+    
+    border: 3px solid #2a7059;
+    border-radius: 15px;
+}
+
+.ia {
+    margin: 10px;
+    padding: 5px;
+
+    width: 80px;
+    
+    font-size: 23pt;
+    color: #6c9bb6;
+    text-align: center;
+
+    border: 2px solid #663399;
+    border-radius: 10px;
+}
+
+.oa {
+    margin: 10px;
+    padding: 5px;
+
+    width: 80px;
+    
+    font-size: 23pt;
+    color: #6c9bb6;
+    text-align: center;
+
+    border: 2px solid #663399;
+    border-radius: 10px;
+}
+
+.aa {
+    margin: 10px;
+
+    width: fit-content;
+
+    background-color: #f0ffff;
+
+    border: 3px solid salmon;
+    border-radius: 25px;
+}
