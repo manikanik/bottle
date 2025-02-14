@@ -65,7 +65,7 @@ function updateVariables() {
                   \\(${given}\\)<br>
                   \\(${v1}${op}\\frac{1}{${v1}}${e}${x1}\\)<br><br>
                   \\(${c}\\,\\left(${v1}${op}\\frac{1}{${v1}}\\right)^2${e}(${x1})^2\\)<br><br>
-                  \\(${c}\\,(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}\\,\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
+                  \\(${c}\\,(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}\\.\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
                   \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${op}2${e}${x1*x1}\\)<br><br>
                   \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${x1*x1}${opO}2\\)<br><br>
                   \\(${d}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${xxx}\\)`;
@@ -79,7 +79,7 @@ function updateVariables() {
                   \\(${given}\\)<br>
                   \\(${v1}${op}\\frac{1}{${v1}}${e}${x1}\\)<br><br>
                   \\(${c}\\,\\left(${v1}${op}\\frac{1}{${v1}}\\right)^3${e}(${x1})^3\\)<br><br>
-                  \\(${c}\\,(${v1})^3${op}\\left(\\frac{1}{${v1}}\\right)^3${op}3.${v1}\\,\\frac{1}{${v1}}\\,(${v1}${op}\\frac{1}{${v1}})${e}${x1*x1*x1}\\)<br><br>
+                  \\(${c}\\,(${v1})^3${op}\\left(\\frac{1}{${v1}}\\right)^3${op}3.${v1}\\.\\frac{1}{${v1}}\\,(${v1}${op}\\frac{1}{${v1}})${e}${x1*x1*x1}\\)<br><br>
                   \\(${c}\\,${v1}^3${op}\\frac{1}{${v1}^3}${op}3.1.${x1}${e}${x1*x1*x1}\\)<br><br>
                   \\(${c}\\,${v1}^3${op}\\frac{1}{${v1}^3}${e}${x1*x1*x1}${opO}${3*x1}\\)<br><br>
                   \\(${d}\\,${v1}^3${op}\\frac{1}{${v1}^3}${e}${yyy}\\)`;
@@ -90,12 +90,12 @@ function updateVariables() {
                   \\(${given}\\)<br>
                   \\(${v1}${op}\\frac{1}{${v1}}${e}${x1}\\)<br><br>
                   \\(${c}\\,\\left(${v1}${op}\\frac{1}{${v1}}\\right)^2${e}(${x1})^2\\)<br><br>
-                  \\(${c}\\,(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}\\,\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
+                  \\(${c}\\,(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}\\.\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
                   \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${op}2${e}${x1*x1}\\)<br><br>
                   \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${x1*x1}${opO}2\\)<br><br>
                   \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${xxx_ggc}\\)<br><br>
                   \\(${c}\\,\\left(${v1}^2+\\frac{1}{${v1}^2}\\right)^2${e}(${xxx_ggc})^2\\)<br><br>
-                  \\(${c}\\,(${v1}^2)^2+\\left(\\frac{1}{${v1}^2}\\right)^2+2.${v1}^2\\,\\frac{1}{${v1}^2}${e}${xxx_ggc*xxx_ggc}\\)<br><br>
+                  \\(${c}\\,(${v1}^2)^2+\\left(\\frac{1}{${v1}^2}\\right)^2+2.${v1}^2\\.\\frac{1}{${v1}^2}${e}${xxx_ggc*xxx_ggc}\\)<br><br>
                   \\(${c}\\,${v1}^4+\\frac{1}{${v1}^4}+2${e}${xxx_ggc*xxx_ggc}\\)<br><br>
                   \\(${c}\\,${v1}^4+\\frac{1}{${v1}^4}${e}${xxx_ggc*xxx_ggc}-2\\)<br><br>
                   \\(${d}\\,${v1}^4+\\frac{1}{${v1}^4}${e}${xxx_ggc*xxx_ggc-2}\\)`;
@@ -107,7 +107,7 @@ function updateVariables() {
                   \\(${given}\\)<br>
                   \\(${v1}${op}\\frac{1}{${v1}}${e}${x1}\\)<br><br>
                   \\(${c}\\,\\left(${v1}${op}\\frac{1}{${v1}}\\right)^2${e}(${x1})^2\\)<br><br>
-                  \\(${c}\\,(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}\\,\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
+                  \\(${c}\\,(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}\\.\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
                   \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${op}2${e}${x1*x1}\\)<br><br>
                   \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${x1*x1}${opO}2\\)<br><br>
                   \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${xxx_ggd}\\)<br><br>
@@ -125,7 +125,7 @@ function updateVariables() {
                   \\(${given}\\)<br>
                   \\(${v1}${op}\\frac{1}{${v1}}${e}${x1}\\)<br><br>
                   \\(${c}\\,\\left(${v1}${op}\\frac{1}{${v1}}\\right)^2${e}(${x1})^2\\)<br><br>
-                  \\(${c}\\,(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}\\,\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
+                  \\(${c}\\,(${v1})^2+\\left(\\frac{1}{${v1}}\\right)^2${op}2.${v1}\\.\\frac{1}{${v1}}${e}${x1*x1}\\)<br><br>
                   \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${op}2${e}${x1*x1}\\)<br><br>
                   \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${x1*x1}${opO}2\\)<br><br>
                   \\(${c}\\,${v1}^2+\\frac{1}{${v1}^2}${e}${xxx_gge}\\)<br><br>
