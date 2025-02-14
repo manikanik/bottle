@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Math Expressions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <link rel="stylesheet" href="math9.css">
+</head>
+<body>
+    <div class="aa">
+        <div class="input-group">
+            <label for="v1">\(x+\frac{1}{x};\;x: \)</label>
+            <input type="text" class="ia" id="v1" value="a">
+          </div>
+          <div class="input-group">
+              <label for="x1">\(x+\frac{1}{x}=c1;\;c1: \)</label>
+              <input type="number" class="ia" id="x1" value="5">
+          </div>
+          <div class="input-group">
+              <label for="op">\(x\pm\frac{1}{x}: \)</label>
+              <select class="oa" id="op">
+                <option class="oa" value="+">+</option>
+                <option class="oa" value="-">-</option>
+              </select>
+          </div>
+    </div>
+    <div class="aa">
+        <div class="input-group">
+            <label for="av1">\(a: \)</label>
+            <input type="text" class="ia" id="av1" value="x">
+          </div>
+          <div class="input-group">
+            <label for="av2">\(b: \)</label>
+            <input type="text" class="ia" id="av2" value="y">
+          </div>
+          <div class="input-group">
+            <label for="ax1">\(a+b: \)</label>
+            <input type="number" class="ia" id="ax1" value="5">
+          </div>
+          <div class="input-group">
+            <label for="ax2">\(ab: \)</label>
+            <input type="number" class="ia" id="ax2" value="6">
+          </div>
+          <div class="input-group">
+            <label for="aop">\(a\pm b: \)</label>
+            <select class="oa" id="aop">
+              <option class="oa" value="+">+</option>
+              <option class="oa" value="-">-</option>
+            </select>
+          </div>
+    </div>
+
+    <button class="btn" id="updateButton">Update</button>
+  
+    <h2>Results</h2>
+    <div class="output" id="pa"></div>
+    <div class="output" id="pb"></div>
+    <div class="output" id="pc"></div>
+    <div class="output" id="pd"></div>
+    <div class="output" id="pe"></div>
+    <div class="output" id="aa"></div>
+    <div class="output" id="ab"></div>
+    <div class="output" id="ac"></div>
+    <div class="output" id="ad"></div>
+    <div class="output" id="ae"></div>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" 
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '\\[', right: '\\]', display: true},
+              {left: '\\(', right: '\\)', display: false}
+            ]
+          })"></script>
+
+    <script src="math9.js"></script>
+</body>
+</html>
